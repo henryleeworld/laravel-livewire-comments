@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
                 'id'             => 1,
                 'name'           => 'Admin',
                 'email'          => 'admin@admin.com',
-                'password'       => '$2y$10$HKO7epAEUUzzg2urUsT0W.ygl.a4Tf6sxni5doN31uJraA.NBlIGK',
+                'password'       => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
                 'is_admin'       => true,
                 'remember_token' => null,
             ],
