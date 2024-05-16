@@ -10,14 +10,12 @@ use Illuminate\Support\Facades\Schema;
 class CategorySeeder extends Seeder
 {
     /**
-     * Run the database seeds.
-     *
-     * @return void
+     * Run the database seeders.
      */
-    public function run()
+    public function run(): void
     {
         Schema::disableForeignKeyConstraints();
-        Category::factory(10)->create()->each(fn($category) => Post::factory(5)->create(['category_id' => $category->id]));
+        Category::factory()->count(10)->create()->each(fn($category) => Post::factory()->count(5)->create(['category_id' => $category->id]));
         Schema::enableForeignKeyConstraints();
     }
 }

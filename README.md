@@ -1,4 +1,4 @@
-# Laravel 10 Livewire 評論
+# Laravel 11 Livewire 評論
 
 引入 usamamuneerchaudhary 的 commentify 套件來擴增評論，可從客戶評論中獲得寶貴的意見回饋，而回覆評論更有助於贏得客戶的信任。
 
@@ -35,5 +35,5 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/zjEE1uD.png)
+![](https://i.imgur.com/kbkjTP3.png)
 > 所有貼文評論都會公開顯示，任何人都看得到發表的內容

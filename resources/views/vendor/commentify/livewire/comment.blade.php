@@ -57,7 +57,7 @@
                                             x-on:click="confirmCommentDeletion"
                                             x-data="{
                                     confirmCommentDeletion(){
-                                        if(window.confirm(__('You sure to delete this comment?'))){
+                                        if(window.confirm('{{ __('You sure to delete this comment?') }}')){
                                             @this.call('deleteComment')
                                         }
                                     }
@@ -137,10 +137,7 @@
     <script>
         function detectAtSymbol() {
             const textarea = document.getElementById('reply-comment');
-
-            // Check if the textarea element exists
             if (!textarea) {
-                console.warn("Couldn't find the 'reply-comment' element.");
                 return;
             }
 
@@ -150,9 +147,8 @@
 
             if (atSymbolPosition !== -1) {
                 const searchTerm = textBeforeCursor.substring(atSymbolPosition + 1);
-
                 if (searchTerm.trim().length > 0) {
-                    window.livewire.emit('getUsers', searchTerm);
+                    @this.dispatch('getUsers', { searchTerm: searchTerm});
                 }
             }
         }

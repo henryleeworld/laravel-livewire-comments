@@ -12,8 +12,8 @@
                     @method('PATCH')
 
                     <div>
-                        <x-label for="name" :value="__('Name')" />
-                        <x-input type="text"
+                        <x-input-label for="name" :value="__('Name')" />
+                        <x-text-input type="text"
                                      id="name"
                                      name="name"
                                      class="block w-full"
@@ -23,9 +23,9 @@
                     </div>
 
                     <div class="mt-4">
-                        <x-button>
+                        <x-primary-button>
                             {{ __('Submit') }}
-                        </x-button>
+                        </x-primary-button>
                     </div>
                 </form>
 

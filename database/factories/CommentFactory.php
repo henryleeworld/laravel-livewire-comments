@@ -3,11 +3,12 @@
 namespace Usamamuneerchaudhary\Commentify\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 use Usamamuneerchaudhary\Commentify\Models\Comment;
 use Usamamuneerchaudhary\Commentify\Models\User;
 
-
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Usamamuneerchaudhary\Commentify\Models\Comment>
+ */
 class CommentFactory extends Factory
 {
     protected $model = Comment::class;
