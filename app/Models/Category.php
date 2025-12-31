@@ -9,12 +9,13 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Category extends Model
 {
+    /** @use HasFactory<\Database\Factories\CategoryFactory> */
     use HasFactory, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var list<string>
      */
     protected $fillable = ['name'];
 
